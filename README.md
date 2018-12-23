@@ -1,2 +1,2 @@
 # gh-pages-sample
-GitHub PagesSample
+ 伊藤　泰賀
