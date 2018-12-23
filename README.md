@@ -1,1 +1,1 @@
-Analitycs Test
+Analytics Test
