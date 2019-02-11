@@ -1,3 +1,6 @@
+body {
+   background-color: #EEEEEE;
+}
 
 .font {
    text-align: center;
@@ -21,58 +24,32 @@
 }
 @keyframes a{
    0%{  
-    transform: rotate(-80deg);
+    transform: rotate(180deg);
    }
 
    100%{
-    transform:  translateY(0px);
+    transform:  translateY(-100px);
  }
 }
+ 
+/* fade-out practice */
+  body {
+    transition: all 1s;
+  }
 
-.fa-folder-plus {
-  position:fixed; 
-  bottom: 15px;
-  right: 20px;
-  border-radius: 50%;
-  background-color: green;
-  color: #fff;
-  height: 90px;
-  width: 90px;
-  font-size:3em;
-}
-.fa-folder-plus:active {
-  animation: b 0.4s linear forwards;
-}
-@keyframes b{
-   0%{  
-    transform: rotate(-80deg);
-   }
-   100%{
-    transform:  translateY(-70px);
- }
-}
+  .bodyfadeout {
+    opacity: 0;
+  }
 
-.fa-code {
-  position:fixed; 
-  bottom: 15px;
-  right: 20px;
-  border-radius: 50%;
-  background-color: green;
-  color: #fff;
-  height: 90px;
-  width: 90px;
-  font-size:3em;
-}
+  button {
+    width: 40px;
+    height: 40px;
+    background-color: coral;
+    border-radius: 50%;
+    cursor: pointer;
+  } 
 
-.fa-code:active {
-  animation: c 0.4s linear forwards;
-}
-@keyframes c{
-   0%{  
-    transform: rotate(-80deg);
-   }
-
-   100%{
-    transform:  translateY(-150px);
- }
+  .anime3 {
+    transition: all 1s ease-in;
+    margin-left: 110vw;
 }
