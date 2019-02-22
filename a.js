@@ -4,8 +4,8 @@ function linkUrl() {
     location.href = './x.html'
 }
 
-var bt3 = document.getElementById('button3');
-bt3.addEventListener('click', function(){
-    body.classList.add('anime3');
+var btn = document.getElementById('button');
+btn.addEventListener('click', function(){
+    body.classList.add('slide-out');
     setTimeout(linkUrl, 1500);
 });

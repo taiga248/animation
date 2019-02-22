@@ -1,0 +1,18 @@
+.x{
+  font-size: 2em;
+  text-align: center;
+}
+header {
+  text-align: center;
+}
+
+footer{
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 2em;
+  color: white;
+  background-color: silver;
+  text-align: center;
+}
