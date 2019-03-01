@@ -1,7 +1,7 @@
 var body = document.getElementsByTagName('body')[0];
 
 function linkUrl() {
-    location.href = './x.html'
+    location.href = './next.html'
 }
 
 var btn = document.getElementById('button');
