@@ -14,12 +14,11 @@ body {
   border-radius: 50%;
   background-color: green;
   color: #fff;
-  height: 100px;
+  height: 75px;
   width: 100px;
+  padding: 25px 0 0 0;
   font-size:3em;
-}
-
-.fa-plus:active {
+  text-align: center;
   animation:a 0.4s linear forwards;
 }
 @keyframes a{
