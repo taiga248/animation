@@ -1,34 +1,62 @@
 .drag-and-drop {
-  position: absolute;
-  cursor: move;
-  width: 100px;
-  height: 100px;
-  color: #fff;
-  font-size: 20px;
-  line-height: 100px;
-  text-align: center;
-  z-index: 1000;
+    cursor: move;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 20px;
+    line-height: 100px;
+    text-align: center;
 }
-
 .drag {
   z-index: 1001;
 }
 
 #red-box{
-  top:50px;
-  left:50px;
   background-color: red;
-  margin: 50px;
+  border-radius: 50%;
 }
 #blue-box{
-  top:150px;
-  left: 150px;
   background-color: blue;
-  margin: 50px;
+  border-radius: 50%;
 }
 #yellow-box{
-  top:250px;
-  left:250px;
   background-color: yellow;
-  margin: 50px;
+  border-radius: 50%;
 }
+#green-box{
+  background-color: green;
+  border-radius: 50%;
+}
+
+.link{
+padding:5px;
+text-decoration:none;
+}
+
+#target{
+  width:100px;
+  height:100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #01579B;
+  color:#FFF;
+  border:solid 1px #000;
+}
+
+#dropArea1{
+  width:100px;
+  height:100px;
+  margin:10px 0;
+  border:dotted 1px #000;
+}
+
+#dropArea2{
+  width:100px;
+  height:100px;
+  margin:10px 0;
+  border:dotted 1px #000;
+}
+
