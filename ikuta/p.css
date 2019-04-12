@@ -52,11 +52,22 @@ text-decoration:none;
   margin:10px 0;
   border:dotted 1px #000;
 }
-
 #dropArea2{
   width:100px;
   height:100px;
-  margin:10px 0;
+  margin:10px 110px;
+  border:dotted 1px #000;
+}
+#dropArea3{
+  width:100px;
+  height:100px;
+  margin:10px 220px;
+  border:dotted 1px #000;
+}
+#dropArea4{
+  width:100px;
+  height:100px;
+  margin:10px 330px;
   border:dotted 1px #000;
 }
 
