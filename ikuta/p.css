@@ -1,5 +1,5 @@
 .drag-and-drop {
-    cursor: move;
+    cursor: all-scroll;
     width: 100px;
     height: 100px;
     position: absolute;
@@ -14,28 +14,34 @@
 }
 
 #red-box{
+  top: 0;
+  left: 0;
   background-color: red;
   border-radius: 50%;
 }
 #blue-box{
+  top: 0;
+  left: 110px;
   background-color: blue;
   border-radius: 50%;
 }
 #yellow-box{
+  top: 0;
+  left: 220px;
   background-color: yellow;
   border-radius: 50%;
 }
 #green-box{
+  top: 0;
+  left: 330px;
   background-color: green;
   border-radius: 50%;
 }
 
-.link{
-padding:5px;
-text-decoration:none;
-}
+/* ---------------------- */
 
 #target{
+  cursor: pointer;
   width:100px;
   height:100px;
   display: flex;
@@ -64,10 +70,3 @@ text-decoration:none;
   margin:10px 220px;
   border:dotted 1px #000;
 }
-#dropArea4{
-  width:100px;
-  height:100px;
-  margin:10px 330px;
-  border:dotted 1px #000;
-}
-
