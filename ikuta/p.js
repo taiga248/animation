@@ -79,7 +79,7 @@
 
 })()
 
-// ----------------------------------------------------
+// ---------------------------------------------------- //
 
 //ドラッグできる要素
 const target = document.getElementById('target');
@@ -87,7 +87,6 @@ const target = document.getElementById('target');
 const dropArea1 = document.getElementById('dropArea1');
 const dropArea2 = document.getElementById('dropArea2');
 const dropArea3 = document.getElementById('dropArea3');
-const dropArea4 = document.getElementById('dropArea4');
 
 
 //ドラッグが開始された時
@@ -120,10 +119,6 @@ dropArea2.addEventListener('dragenter', () => {
 dropArea3.addEventListener('dragenter', () => {
         dropArea3.style.background = "#E0E0E0";
 }, false);
-dropArea4.addEventListener('dragenter', () => {
-        dropArea4.style.background = "#E0E0E0";
-}, false);
-
 
 
 
@@ -138,10 +133,6 @@ dropArea2.addEventListener('dragleave', (event) => {
 dropArea3.addEventListener('dragleave', (event) => {
         dropArea3.style.background = "none";
 }, false);
-dropArea4.addEventListener('dragleave', (event) => {
-        dropArea4.style.background = "none";
-}, false);
-
 
 
 
@@ -157,10 +148,6 @@ dropArea2.addEventListener('dragover', (event) => {
 dropArea3.addEventListener('dragover', (event) => {
         event.preventDefault();
 }, false);
-dropArea4.addEventListener('dragover', (event) => {
-        event.preventDefault();
-}, false);
-
 
 
 
@@ -175,7 +162,4 @@ dropArea2.addEventListener('drop', () => {
 }, false);
 dropArea3.addEventListener('drop', () => {
         dropArea3.appendChild(target);
-}, false);
-dropArea4.addEventListener('drop', () => {
-        dropArea4.appendChild(target);
 }, false);
