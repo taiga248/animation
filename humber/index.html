@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="UTF-8">
+   <title>humber</title>
+   <html>
+  <style>
+   /*   ボタンタグ設定   */
+   button {
+    display: block;
+    background: none;
+    border: none;
+    padding: 0;
+    width: 42px;
+    color: #333;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1001;
+    text-align: center;
+    outline: none;
+  }
+  /*   ハンバーガーボタン3本線   */
+  button span.bar {
+    display: block;
+    height: 2px;
+    background-color: #333;
+    margin: 10px 0;
+    transition: all 0.2s;
+    transform-origin: 0 0;
+  }
+  button .close {
+    letter-spacing: 0.08em;
+    display: none;
+  }
+  button .menu {
+    display: block;
+  }
+  /*  メニューアクティブ時  */
+  button.active span.bar {
+    width: 49px;
+  }
+  button.active .bar1 {
+    transform: rotate(30deg);
+  }
+  button.active .bar2 {
+    opacity: 0;
+  }
+  button.active .bar3 {
+    transform: rotate(-30deg);
+  }
+  button.active .menu {
+    display: none;
+  }
+  button.active .close {
+    display: block;
+  }
+  </style>
+</head>
+<script src="./jquery-3.3.1.min.js">
+// jQueryは読み込み済み前提
+$(function(){
+  $('.btn_menu').click(function(){
+    $(this).toggleClass('active');
+  });
+})
+</script>
+
+<button type="button" class="btn_menu">
+  <span class="bar bar1"></span>
+  <span class="bar bar2"></span>
+  <span class="bar bar3"></span>
+  <span class="menu">MENU</span>
+  <span class="close">CLOSE</span>
+</button>
+</html>
