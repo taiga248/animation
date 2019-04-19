@@ -1,0 +1,23 @@
+#slide_menu {
+  background: #fff;
+  padding: 30px 20px;
+  margin-top: -200px;
+  position: fixed;
+  top: 50%;
+  z-index: 10000;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  width: 250px;
+  box-sizing: border-box;
+}
+
+#slide_menu li a:link,
+#slide_menu li a:visited {
+  color: #5d5d5d;
+  text-decoration: none;
+}
+
+#slide_menu li a:hover,
+#slide_menu li a:active {
+  color: #EB714E;
+  text-decoration: underline;
+}
