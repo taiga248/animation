@@ -1,9 +1,8 @@
-$(function(){
+(function(){
 
   $('#slide_menu').css({
     right: '-200px',
   });
-	
   $('#slide_menu')
   .on('mouseover', function(){
     $(this).stop(true).animate({
@@ -15,5 +14,4 @@ $(function(){
       right: '-200px'
     }, 200, 'easeInOutCubic');
   });
-
 });
