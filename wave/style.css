@@ -13,8 +13,8 @@ body {
 }
 
 .box {
-  width: 300px;
-  height: 300px;
+  width: 100vw;
+  height: 100vh;
   border-radius: 5px;
   box-shadow: 0 2px 30px rgba(black, .2);
   background: lighten(#f0f4c3, 10%);
@@ -29,21 +29,21 @@ body {
   top: 3%;
   left: 50%;
   background: #0af;
-  width: 500px;
-  height: 500px;
+  width: 700px;
+  height: 700px;
   margin-left: -250px;
   margin-top: -250px;
   transform-origin: 50% 48%;
   border-radius: 43%;
-  animation: drift 3000ms infinite linear;
-}
-
-.wave.-three {
   animation: drift 5000ms infinite linear;
 }
 
-.wave.-two {
+.wave.-three {
   animation: drift 7000ms infinite linear;
+}
+
+.wave.-two {
+  animation: drift 9000ms infinite linear;
   opacity: .1;
   background: yellow;
 }
