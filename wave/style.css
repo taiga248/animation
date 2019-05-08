@@ -1,21 +1,22 @@
 .wave {
   position:absolute;
-  top: -80%;
-  opacity: .4;
-  background: #0af;
-  width: 200vw;
-  height: 100vh;
-  border-radius: 48%;
-  animation: drift 700s infinite linear;
-}
-
-.wave.-three {
-  animation: drift 7000ms infinite linear;
-}
-
-.wave.-two {
-  animation: drift 9000ms infinite linear;
+  top: -130%;
   opacity: .1;
+  background: #0af;
+  width: 300vw;
+  height:200vh;
+  border-radius: 48%;
+}
+
+.wave.-one {
+  animation: drift 80000ms infinite linear;
+}
+.wave.-three {
+  animation: drift 90000ms infinite linear;
+}
+.wave.-two {
+  animation: drift 100000ms infinite linear;
+  opacity: .06;
   background: yellow;
 }
 
