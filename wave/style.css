@@ -7,19 +7,17 @@
   height:200vh;
   border-radius: 48%;
 }
-
 .wave.-one {
-  animation: drift 80000ms infinite linear;
+  animation: drift 8000ms infinite linear;
 }
 .wave.-three {
-  animation: drift 90000ms infinite linear;
+  animation: drift 9000ms infinite linear;
 }
 .wave.-two {
-  animation: drift 100000ms infinite linear;
+  animation: drift 10000ms infinite linear;
   opacity: .06;
   background: yellow;
 }
-
 @keyframes drift {
   from { transform: rotate(0deg); }
   from { transform: rotate(360deg); }
