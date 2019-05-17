@@ -1,0 +1,14 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.approval{
+   text-align: center;
+   border: 5px solid silver ;
+   margin: 10vh 10vw;
+}
+
+.fa-meh{
+  font-size: 5em;
+}
