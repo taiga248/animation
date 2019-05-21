@@ -14,13 +14,13 @@
   width: 3000px;
   height: 3000px;
   border-radius: 43%;
-  animation: drift 30000ms infinite linear;
+  animation: drift 10000ms infinite linear;
 }
 .wave.-three {
-  animation: drift 50000ms infinite linear;
+  animation: drift 30000ms infinite linear;
 }
 .wave.-two {
-  animation: drift 70000ms infinite linear;
+  animation: drift 50000ms infinite linear;
   opacity: .1;
   background: yellow;
 }
