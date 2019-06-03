@@ -12,16 +12,3 @@ btns.addEventListener('click',function(){
   }
 }
 );
-
-var body = document.getElementsByTagName('body')[0];
-
-function linkUrl() {
-    location.href = 'https://google.com'
-}
-
-var btns2 = document.getElementById('btn2');
-btn2.addEventListener('click', function(){
-    body.classList.add('anime3');
-    setTimeout(linkUrl, 1500);
-});
-
