@@ -3,6 +3,8 @@
   height: 900px;
   border-radius: 5px;
   transform: translate3d(0, 0, 0);
+  box-shadow: 10px 10px 10px;
+  background-color: red;
 }
 
 .wave {
