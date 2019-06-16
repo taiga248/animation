@@ -1,0 +1,10 @@
+.fade_off {
+    opacity: 0;
+    transition: all 1s;
+    background-color: yellow;
+}
+
+.fade_on {
+    opacity: 1;
+    background-color: skyblue;
+}
