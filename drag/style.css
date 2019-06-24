@@ -1,45 +1,3 @@
-.drag-and-drop {
-    cursor: all-scroll;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    z-index: 1000;
-    color: #fff;
-    font-size: 20px;
-    line-height: 100px;
-    text-align: center;
-}
-.drag {
-  z-index: 1001;
-}
-
-#red-box{
-  top: 0;
-  left: 0;
-  background-color: red;
-  border-radius: 50%;
-}
-#blue-box{
-  top: 0;
-  left: 110px;
-  background-color: blue;
-  border-radius: 50%;
-}
-#yellow-box{
-  top: 0;
-  left: 220px;
-  background-color: yellow;
-  border-radius: 50%;
-}
-#green-box{
-  top: 0;
-  left: 330px;
-  background-color: green;
-  border-radius: 50%;
-}
-
-/* ---------------------- */
-
 #target{
   cursor: pointer;
   width:100px;
@@ -55,18 +13,18 @@
 #dropArea1{
   width:100px;
   height:100px;
-  margin:10px 0;
+  margin:10px;
   border:dotted 1px #000;
 }
 #dropArea2{
   width:100px;
   height:100px;
-  margin:10px 110px;
+  margin:10px;
   border:dotted 1px #000;
 }
 #dropArea3{
   width:100px;
   height:100px;
-  margin:10px 220px;
+  margin:10px;
   border:dotted 1px #000;
 }

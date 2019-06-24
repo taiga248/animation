@@ -1,0 +1,8 @@
+li {
+    list-style-type: none;
+    border: 2px solid #00a7d5;
+    background-color: skyblue;
+    width: 10vw;
+    text-align: center;
+    margin: 5px;
+}
