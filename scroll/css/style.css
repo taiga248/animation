@@ -1,9 +1,42 @@
-.fade_off {
-    opacity: 0;
-    transition: all 1s;
-    background-color: yellow;
+body {
+  margin: 0 0 30vh 0;
+  padding: 0;
 }
+
+.space {
+  text-align: center;
+  margin: 50vh 0;
+  border: solid 1px silver;
+  padding: 10px;
+}
+
 .fade_on {
+  background-color: skyblue;
+  animation: in .3s forwards;
+}
+
+.box {
+  opacity: 0;
+  font-size: 4em;
+  height: 130px;
+  border: 1px solid silver;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+@keyframes in {
+  0%{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  50%{
+    opacity: .5;
+    transform: translateY(50px);
+  }
+  100%{
     opacity: 1;
-    background-color: skyblue;
+    transform: translateY(0);
+  }
 }
