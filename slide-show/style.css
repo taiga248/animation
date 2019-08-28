@@ -24,8 +24,6 @@ body {
 }
 
 .slide-button i {
-  position: relative;
-  top: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,12 +32,20 @@ body {
   font-size: 2em;
   height: 60px;
   width: 60px;
-  margin: 0 31vw;
   border-radius: 50%;
   box-shadow: 0px 3px 5px #bbb;
   transition: .5s;
 }
-
+#left {
+  position: absolute;
+  top: 40vh;
+  left:15vw;
+} 
+#right {
+  position: absolute;
+  top: 40vh;
+  right:15vw;
+} 
 i:hover {
     color: silver;
     background-color: #fff;
