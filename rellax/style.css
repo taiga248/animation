@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.Circle-area {
+  width: 75%;
+  margin: 200px auto ;
+}
+
+.Circle{
+  position: relative;
+  border-radius: 50%;
+  opacity: .5;
+}
+
+.one {
+  width: 400px;
+  height: 400px;
+  background-color: red;
+}
+
+.two {
+  width: 700px;
+  height: 700px;
+  background-color: green;
+  left: 30%;
+}
+
+.three {
+  width: 800px;
+  padding-top: 800px;
+  background-color: blue;
+}
+
+.four {
+  width: 600px;
+  height: 600px;
+  top: -100px;
+  left: 60%;
+  background-color: purple;
+}
