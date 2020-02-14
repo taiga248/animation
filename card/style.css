@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    margin: 0;
+}
+
+.container{
+    border-radius: 10px;
+    margin: 10px;
+
+}
+
+.card{
+    background: rgb(7, 218, 165);
+    padding: 1em;
+    border-radius: 10px;
+    width: 250px;
+    clip-path: circle(10% at 90% 20%);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+span{
+    float: right;
+    position: relative;
+    margin: 2% 4% 0 0;
+}
+
+.card:hover span{
+    color: #00B6FF; 
+}
+.card:hover{
+    clip-path: circle(75%);
+    background: #00B6FF;
+    box-shadow: #ddd 7px 7px 5px;
+}
