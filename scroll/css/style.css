@@ -3,10 +3,9 @@ body {
   padding: 0;
 }
 
-.space {
+.title{
   text-align: center;
   margin: 50vh 0;
-  border: solid 1px silver;
   padding: 10px;
 }
 
