@@ -1,5 +1,8 @@
-body{
+*{
     margin: 0;
+    padding: 0;
+}
+body{
     color: #fff;
     height: 100vh;
     display: flex;
@@ -7,14 +10,9 @@ body{
     align-items: center;
 }
 
-h1{
-    margin: 0;
-}
-
 .container{
     border-radius: 10px;
     margin: 10px;
-
 }
 
 .card{
@@ -27,15 +25,23 @@ h1{
     cursor: pointer;
 }
 
-span{
+/* i ボタン */
+.card__info{
     float: right;
     position: relative;
-    margin: 2% 4% 0 0;
+    margin: 0% 4% 0 0;
+    transition: color .6s ease;
 }
 
-.card:hover span{
+.card__title{
+  padding: 0 0 10px 0;
+}
+
+/* i がいい感じに消えるように */
+.card:hover .card__info{
     color: #00B6FF; 
 }
+/* 円が広がるように */
 .card:hover{
     clip-path: circle(75%);
     background: #00B6FF;
