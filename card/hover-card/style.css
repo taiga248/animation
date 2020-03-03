@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.card {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	min-width: 220px;
+	max-width: 300px;
+	max-height: 220px;
+    margin: 10px 1%;
+}
+.card__img {
+	width: 100%;
+	height: 100%;
+}
+.card__text {
+	position: absolute;
+	top: 50%;
+	padding: 3em 3em;
+	transition: all 0.3s ease-out;
+	transition-delay: 0.1s;
+	opacity: 0;
+	z-index: 1;
+}
+.card:after {
+	position: absolute;
+	top: 7%;
+	bottom: 7%;
+	right: 10%;
+	left: 10%;
+	content: '';
+	transition: all 0.3s ease-out;
+	opacity: 0;
+	background: #fff;
+}
+.card:hover:after {
+	opacity: 0.9;
+}
+.card:hover .card__text{
+	transform: translateY(-50%);
+	opacity: 1;
+}
