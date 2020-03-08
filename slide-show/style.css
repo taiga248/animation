@@ -7,7 +7,8 @@ body {
   position: relative;
 }
 
-#slide img {
+.slide__img {
+  display: block;
   position: absolute;
   top: 45vh;
   left: 50vw;
@@ -49,4 +50,30 @@ body {
 i:hover {
     color: silver;
     background-color: #fff;
+}
+
+.fadeout {
+  animation : fadeOut 1s;
+  animation-fill-mode: both;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fading {
+  animation : fadeIn 1s;
+  animation-fill-mode: both;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
