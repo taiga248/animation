@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const slide__img = document.getElementsByClassName("slide__img")
     const left = document.getElementById("left")
     const right = document.getElementById("right")
-    const changeTime = 4000
+    const changeTime = 5000
     let lastPage = slide.childElementCount - 1
     let page = 0
     let Timer
@@ -11,9 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function changePage(){
          for(let i=0; i<slide__img.length; i++){
               if(page === i){
-                   slide__img[page].style.display = "block"
+                   slide__img[page].classList.remove("fadeout")
+                   slide__img[page].classList.add("fading")
                }else{
-                    slide__img[i].style.display = "none"
+                   slide__img[i].classList.remove("fading")
+                   slide__img[i].classList.add("fadeout")
                }
           }
      }
