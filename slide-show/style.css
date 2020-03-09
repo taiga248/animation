@@ -8,7 +8,6 @@ body {
 }
 
 .slide__img {
-  display: block;
   position: absolute;
   top: 45vh;
   left: 50vw;
@@ -48,8 +47,8 @@ body {
   right:15vw;
 } 
 i:hover {
-    color: silver;
-    background-color: #fff;
+  color: silver;
+  background-color: #fff;
 }
 
 .fadeout {
@@ -58,10 +57,10 @@ i:hover {
 }
 @keyframes fadeOut {
   0% {
-    opacity: 1;
+    display: block;
   }
   100% {
-    opacity: 0;
+    display: none;
   }
 }
 
@@ -71,9 +70,9 @@ i:hover {
 }
 @keyframes fadeIn {
   0% {
-    opacity: 0;
+    display: none;
   }
   100% {
-    opacity: 1;
+    display: block;
   }
 }
