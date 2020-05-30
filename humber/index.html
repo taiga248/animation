@@ -1,23 +1,17 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-   <meta charset="UTF-8">
-   <title>humber</title>
-   <link rel="stylesheet" href="./style.css">
-</head>
-<script src="./jquery-3.3.1.min.js"></script>
-  <script>
-$(function(){
-  $('.btn_menu').click(function(){
-    $(this).toggleClass('active');
-  });
-})
-</script>
-  <button type="button" class="btn_menu">
-    <span class="bar bar1"></span>
-    <span class="bar bar2"></span>
-    <span class="bar bar3"></span>
-    <span class="menu">MENU</span>
+  <head>
+    <meta charset="UTF-8" />
+    <title>humber</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <button class="menu-icon" type="button">
+    <span class="menu-icon__line line1"></span>
+    <span class="menu-icon__line line2"></span>
+    <span class="menu-icon__line line3"></span>
+    <span class="open">MENU</span>
     <span class="close">CLOSE</span>
   </button>
+  <script src="./jquery-3.3.1.min.js"></script>
+  <script src="app.js"></script>
 </html>
