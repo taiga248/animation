@@ -1,52 +1,45 @@
- /*   ボタンタグ設定   */
-   button {
-    display: block;
-    background: none;
-    border: none;
-    padding: 0;
-    width: 42px;
-    color: #333;
-    letter-spacing: 0.1em;
-    cursor: pointer;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 1001;
-    text-align: center;
-    outline: none;
-  }
-  /*   ハンバーガーボタン3本線   */
-  button span.bar {
-    display: block;
-    height: 2px;
-    background-color: #333;
-    margin: 10px 0;
-    transition: all 0.2s;
-    transform-origin: 0 0;
-  }
-  button .close {
-    letter-spacing: 0.08em;
-    display: none;
-  }
-  button .menu {
-    display: block;
-  }
-  /*  メニューアクティブ時  */
-  button.active span.bar {
-    width: 49px;
-  }
-  button.active .bar1 {
-    transform: rotate(30deg);
-  }
-  button.active .bar2 {
-    opacity: 0;
-  }
-  button.active .bar3 {
-    transform: rotate(-30deg);
-  }
-  button.active .menu {
-    display: none;
-  }
-  button.active .close {
-    display: block;
-  }
+.menu-icon {
+  display: block;
+  background: none;
+  border: none;
+  padding: 0;
+  width: 42px;
+  color: #333;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+}
+/* MENUの三本線 */
+.menu-icon__line {
+  display: block;
+  height: 2px;
+  background-color: #333;
+  margin: 10px 0;
+  transition: all 0.2s;
+  transform-origin: 0 0;
+}
+.close {
+  display: none;
+}
+.open {
+  display: block;
+}
+
+.menu-icon.active .menu-icon__line {
+  width: 49px;
+}
+.menu-icon.active .line1 {
+  transform: rotate(30deg);
+}
+.menu-icon.active .line2 {
+  opacity: 0;
+}
+.menu-icon.active .line3 {
+  transform: rotate(-30deg);
+}
+.menu-icon.active .open {
+  display: none;
+}
+.menu-icon.active .close {
+  display: block;
+}
