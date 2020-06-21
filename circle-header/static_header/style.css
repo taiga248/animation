@@ -1,0 +1,53 @@
+body {
+  margin: 0%;
+  padding: 0;
+}
+
+main {
+  height: 100vh;
+}
+
+header {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: skyblue;
+  border-radius: 50%;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: translateX(-50%) scale(4);
+          transform: translateX(-50%) scale(4);
+}
+
+.content {
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+.content__title {
+  font-size: 3em;
+}
+
+.content__text {
+  font-size: 2em;
+}
+/*# sourceMappingURL=style.css.map */
