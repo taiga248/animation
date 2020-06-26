@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  background: url("img/shoes.jpg");
+  background-size: cover;
+  -webkit-animation: light 7s infinite ease-in-out;
+          animation: light 7s infinite ease-in-out;
+}
+
+@-webkit-keyframes light {
+  0% {
+    -webkit-clip-path: circle(200px at 20vw 10vh);
+            clip-path: circle(200px at 20vw 10vh);
+  }
+  25% {
+    -webkit-clip-path: circle(300px at 30vw 60vh);
+            clip-path: circle(300px at 30vw 60vh);
+  }
+  50% {
+    -webkit-clip-path: circle(500px at 80vw 80vh);
+            clip-path: circle(500px at 80vw 80vh);
+  }
+  75% {
+    -webkit-clip-path: circle(300px at 60vw 30vh);
+            clip-path: circle(300px at 60vw 30vh);
+  }
+  100% {
+    -webkit-clip-path: circle(200px at 20vw 10vh);
+            clip-path: circle(200px at 20vw 10vh);
+  }
+}
+
+@keyframes light {
+  0% {
+    -webkit-clip-path: circle(200px at 20vw 10vh);
+            clip-path: circle(200px at 20vw 10vh);
+  }
+  25% {
+    -webkit-clip-path: circle(300px at 30vw 60vh);
+            clip-path: circle(300px at 30vw 60vh);
+  }
+  50% {
+    -webkit-clip-path: circle(500px at 80vw 80vh);
+            clip-path: circle(500px at 80vw 80vh);
+  }
+  75% {
+    -webkit-clip-path: circle(300px at 60vw 30vh);
+            clip-path: circle(300px at 60vw 30vh);
+  }
+  100% {
+    -webkit-clip-path: circle(200px at 20vw 10vh);
+            clip-path: circle(200px at 20vw 10vh);
+  }
+}
+/*# sourceMappingURL=style.css.map */
