@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 12px 24px;
+}
+.card-area {
+  width: 300px;
+  margin: 24px;
+  &__content {
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(
+        to right,
+        #efefef,
+        #efefef 25%,
+        transparent 75%,
+        transparent
+      )
+      100% 0 / 200% 100%;
+    transition: background-position 0.4s;
+    &:hover {
+      background-position: 0 0;
+    }
+    &__img {
+      width: 100%;
+    }
+    &__text {
+      padding: 10px;
+      margin: 8px 16px;
+    }
+  }
+}

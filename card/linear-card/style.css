@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 12px 24px;
+}
+
+.card-area {
+  width: 300px;
+  margin: 24px;
+}
+
+.card-area__content {
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, left top, right top, from(#efefef), color-stop(25%, #efefef), color-stop(75%, transparent), to(transparent)) 100% 0/200% 100%;
+  background: linear-gradient(to right, #efefef, #efefef 25%, transparent 75%, transparent) 100% 0/200% 100%;
+  -webkit-transition: background-position 0.4s;
+  transition: background-position 0.4s;
+}
+
+.card-area__content:hover {
+  background-position: 0 0;
+}
+
+.card-area__content__img {
+  width: 100%;
+}
+
+.card-area__content__text {
+  padding: 10px;
+  margin: 8px 16px;
+}
+/*# sourceMappingURL=style.css.map */
