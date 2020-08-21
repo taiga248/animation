@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
@@ -12,25 +12,25 @@
     <title>Slide-Show</title>
   </head>
   <body>
-    <h1 style="text-align: center;">Slide-Show Demo</h1>
-    <div class="slide-area">
-      <div id="slide">
-        <img class="slide__img" src="./pic/yellow.jpg" />
-        <img class="slide__img" src="./pic/sunlight.jpg" />
-        <img class="slide__img" src="./pic/yag.jpg" />
-        <img class="slide__img" src="./pic/cab.jpg" />
-        <img class="slide__img" src="./pic/ino.jpg" />
-        <img class="slide__img" src="./pic/sea-house.jpg" />
-        <img class="slide__img" src="./pic/classroom.jpg" />
-        <img class="slide__img" src="./pic/mou.jpg" />
-        <img class="slide__img" src="./pic/ocean.jpg" />
+    <p class="message">PCサイズで御覧くださいませ</p>
+    <section>
+      <h1 class="title">SlideShow Demo</h1>
+      <div class="slide" id="slide">
+        <img class="slide__item" src="pic/yellow.jpg" />
+        <img class="slide__item" src="pic/sunlight.jpg" />
+        <img class="slide__item" src="pic/yag.jpg" />
+        <img class="slide__item" src="pic/cab.jpg" />
+        <img class="slide__item" src="pic/ino.jpg" />
+        <img class="slide__item" src="pic/sea-house.jpg" />
+        <img class="slide__item" src="pic/classroom.jpg" />
+        <img class="slide__item" src="pic/mou.jpg" />
+        <img class="slide__item" src="pic/ocean.jpg" />
       </div>
-      <div class="slide-button">
-        <p id="left"><i class="fas fa-angle-left arrow"></i></p>
-        <p id="right"><i class="fas fa-angle-right arrow"></i></p>
+      <div class="btn">
+        <div class="btn__left" id="left"></div>
+        <div class="btn__right" id="right"></div>
       </div>
-    </div>
-
-    <script src="./app.js"></script>
+    </section>
+    <script src="app.js"></script>
   </body>
 </html>

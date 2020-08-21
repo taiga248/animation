@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 559px) {
+  section {
+    display: none;
+  }
+  .message {
+    display: block;
+    position: relative;
+    top: 45vh;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 560px) {
+  .message {
+    display: none;
+  }
+  .title {
+    text-align: center;
+    margin: 5vh 0;
+    font-size: 1.5em;
+  }
+  .slide {
+    margin: 0 auto;
+    position: relative;
+    &__item {
+      position: absolute;
+      top: 0;
+      left: 50vw;
+      transform: translateX(-50%);
+      width: 60vw;
+      border-radius: 5px;
+    }
+  }
+
+  %btn-base {
+    height: 60px;
+    width: 60px;
+    color: #fff;
+    background-color: #000;
+    font-size: 2em;
+    border-radius: 50%;
+    box-shadow: 0px 3px 5px #bbb;
+    cursor: pointer;
+    transition: color 0.4s, background-color 0.4s;
+  }
+  %btn-hover {
+    color: #000;
+    background-color: #fff;
+  }
+  .btn {
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+    margin: 0 auto;
+    position: relative;
+    top: 25vh;
+    &__left {
+      @extend %btn-base;
+      &:hover {
+        @extend %btn-hover;
+      }
+      &::after {
+        content: "\f104";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: relative;
+        top: 6px;
+        left: 22px;
+      }
+    }
+    &__right {
+      @extend %btn-base;
+      &:hover {
+        @extend %btn-hover;
+      }
+      &::after {
+        content: "\f105";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: relative;
+        top: 6px;
+        left: 22px;
+      }
+    }
+  }
+
+  .fadeout {
+    animation: fadeOut 1s ease both;
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .fadin {
+    animation: fadeIn 1s ease both;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

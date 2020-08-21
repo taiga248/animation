@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.block {
+  width: 100%;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  &__1 {
+    background: #212e32;
+    color: #fff;
+    z-index: 100;
+  }
+  &__2 {
+    background: #85937a;
+    z-index: 200;
+  }
+  &__3 {
+    background: #586c5d;
+    color: #fff;
+    z-index: 300;
+  }
+}
+p {
+  display: inline-block;
+  margin: 0;
+  font-size: 48px;
+  font-family: "Great Vibes", cursive;
+}

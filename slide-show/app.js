@@ -1,48 +1,49 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const slide = document.getElementById("slide")
-    const slide__img = document.getElementsByClassName("slide__img")
-    const left = document.getElementById("left")
-    const right = document.getElementById("right")
-    const changeTime = 5000
-    let lastPage = slide.childElementCount - 1
-    let page = 0
-    let Timer
+document.addEventListener("DOMContentLoaded", () => {
+  const slide = document.getElementById("slide");
+  const slide__item = document.getElementsByClassName("slide__item");
+  const left = document.getElementById("left");
+  const right = document.getElementById("right");
+  const lastPage = slide.childElementCount - 1;
+  const changeTime = 5000;
 
-    function changePage(){
-         for(let i=0; i<slide__img.length; i++){
-              if(page === i){
-                   slide__img[page].classList.remove("fadeout")
-                   slide__img[page].classList.add("fading")
-               }else{
-                   slide__img[i].classList.remove("fading")
-                   slide__img[i].classList.add("fadeout")
-               }
-          }
-     }
+  let activItem = 0;
+  let Timer;
 
-    function startTimer(){
-          Timer =setInterval(() => {
-               page === lastPage ? page=0 : page++
-               changePage()
-          }, changeTime)
+  function nextPage() {
+    for (let i = 0; i < slide__item.length; i++) {
+      if (activItem === i) {
+        slide__item[activItem].classList.remove("fadeout");
+        slide__item[activItem].classList.add("fadin");
+      } else {
+        slide__item[i].classList.remove("fadin");
+        slide__item[i].classList.add("fadeout");
+      }
     }
+  }
 
-    function stopTimer(){
-         clearInterval(Timer)
-    }
+  function startTimer() {
+    Timer = setInterval(() => {
+      activItem === lastPage ? (activItem = 0) : activItem++;
+      nextPage();
+    }, changeTime);
+  }
 
-    right.addEventListener("click", () => {
-         stopTimer()
-         startTimer()
-         page === lastPage ? page=0 : page++
-         changePage()
-    })
-    left.addEventListener("click", () => {
-         stopTimer()
-         startTimer()
-         page === 0 ? page = lastPage : page--
-         changePage()
-    })
+  function stopTimer() {
+    clearInterval(Timer);
+  }
 
-    startTimer()
-})
+  right.addEventListener("click", () => {
+    stopTimer();
+    startTimer();
+    activItem === lastPage ? (activItem = 0) : activItem++;
+    nextPage();
+  });
+  left.addEventListener("click", () => {
+    stopTimer();
+    startTimer();
+    activItem === 0 ? (activItem = lastPage) : activItem--;
+    nextPage();
+  });
+
+  startTimer();
+});
