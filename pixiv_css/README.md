@@ -1,3 +1,5 @@
 # ピクシブさんの CSS Intern のやつをいじってみた
 
-[参考記事](https://note.com/nanamimizuno/n/nfda7a85bc779)
+- [fulfill](https://taiga248.github.io/animation/pixiv_css/fulfill)
+- [slide](https://taiga248.github.io/animation/pixiv_css/slide)
+- [text-slider](https://taiga248.github.io/animation/pixiv_css/text-slider)
