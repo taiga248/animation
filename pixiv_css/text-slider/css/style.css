@@ -1,0 +1,297 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  position: relative;
+  top: 15vh;
+  left: 43vw;
+}
+
+.spacer {
+  margin: 24px 0;
+}
+
+.LTR {
+  display: inline-block;
+  position: relative;
+}
+
+.LTR__text {
+  margin: 0;
+  font-weight: 200;
+  font-size: 4em;
+  padding: 0px 8px;
+  opacity: 0;
+  -webkit-animation: textHidden 0.1s 0.7s forwards;
+          animation: textHidden 0.1s 0.7s forwards;
+}
+
+.LTR:before, .LTR:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 10;
+}
+
+.LTR:before {
+  background-color: #a5a3f9;
+  -webkit-animation: LTR 1.3s 0s ease;
+          animation: LTR 1.3s 0s ease;
+}
+
+.LTR:after {
+  background-color: #33459a;
+  -webkit-animation: LTR 1s 0s ease;
+          animation: LTR 1s 0s ease;
+}
+
+@-webkit-keyframes LTR {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  65% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes LTR {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  65% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+.RTL {
+  display: inline-block;
+  position: relative;
+}
+
+.RTL__text {
+  margin: 0;
+  font-weight: 200;
+  font-size: 4em;
+  padding: 0px 8px;
+  opacity: 0;
+  -webkit-animation: textHidden 0.1s 0.7s forwards;
+          animation: textHidden 0.1s 0.7s forwards;
+}
+
+.RTL:before, .RTL:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 10;
+}
+
+.RTL:before {
+  background-color: #a5a3f9;
+  -webkit-animation: RTL 1.3s 0s ease;
+          animation: RTL 1.3s 0s ease;
+}
+
+.RTL:after {
+  background-color: #33459a;
+  -webkit-animation: RTL 1s 0s ease;
+          animation: RTL 1s 0s ease;
+}
+
+@-webkit-keyframes RTL {
+  0% {
+    width: 0;
+    right: 0;
+  }
+  65% {
+    width: 100%;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    right: 100%;
+  }
+}
+
+@keyframes RTL {
+  0% {
+    width: 0;
+    right: 0;
+  }
+  65% {
+    width: 100%;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    right: 100%;
+  }
+}
+
+.TTB {
+  display: inline-block;
+  position: relative;
+}
+
+.TTB__text {
+  margin: 0;
+  font-weight: 200;
+  font-size: 4em;
+  padding: 0px 8px;
+  opacity: 0;
+  -webkit-animation: textHidden 0.1s 0.7s forwards;
+          animation: textHidden 0.1s 0.7s forwards;
+}
+
+.TTB:before, .TTB:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.TTB:before {
+  background-color: #a5a3f9;
+  -webkit-animation: TTB 1.3s 0s ease both;
+          animation: TTB 1.3s 0s ease both;
+}
+
+.TTB:after {
+  background-color: #33459a;
+  -webkit-animation: TTB 1s 0s ease both;
+          animation: TTB 1s 0s ease both;
+}
+
+@-webkit-keyframes TTB {
+  0% {
+    height: 0;
+    top: 0;
+  }
+  65% {
+    height: 100%;
+    top: 0;
+  }
+  100% {
+    height: 0;
+    top: 100%;
+  }
+}
+
+@keyframes TTB {
+  0% {
+    height: 0;
+    top: 0;
+  }
+  65% {
+    height: 100%;
+    top: 0;
+  }
+  100% {
+    height: 0;
+    top: 100%;
+  }
+}
+
+.BTT {
+  display: inline-block;
+  position: relative;
+}
+
+.BTT__text {
+  margin: 0;
+  font-weight: 200;
+  font-size: 4em;
+  padding: 0px 8px;
+  opacity: 0;
+  -webkit-animation: textHidden 0.1s 0.7s forwards;
+          animation: textHidden 0.1s 0.7s forwards;
+}
+
+.BTT:before, .BTT:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.BTT:before {
+  background-color: #a5a3f9;
+  -webkit-animation: BTT 1.3s 0s ease both;
+          animation: BTT 1.3s 0s ease both;
+}
+
+.BTT:after {
+  background-color: #33459a;
+  -webkit-animation: BTT 1s 0s ease both;
+          animation: BTT 1s 0s ease both;
+}
+
+@-webkit-keyframes BTT {
+  0% {
+    height: 0;
+    bottom: 0;
+  }
+  65% {
+    height: 100%;
+    bottom: 0;
+  }
+  100% {
+    height: 0;
+    bottom: 100%;
+  }
+}
+
+@keyframes BTT {
+  0% {
+    height: 0;
+    bottom: 0;
+  }
+  65% {
+    height: 100%;
+    bottom: 0;
+  }
+  100% {
+    height: 0;
+    bottom: 100%;
+  }
+}
+
+@-webkit-keyframes textHidden {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes textHidden {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */

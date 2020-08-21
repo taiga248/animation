@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin slide-base($animationDelay: 0s, $backgroundColor: #fd7e00) {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  animation: slide 1.5s infinite ease-in-out $animationDelay both;
+  background-color: $backgroundColor;
+}
+
+.box {
+  width: 100vw;
+  height: 100px;
+  overflow: hidden;
+  &--1 {
+    &::after {
+      @include slide-base();
+    }
+  }
+  &--2 {
+    &::after {
+      @include slide-base($animationDelay: 0.1s, $backgroundColor: #ff8815);
+    }
+  }
+  &--3 {
+    &::after {
+      @include slide-base($animationDelay: 0.2s, $backgroundColor: #ff9324);
+    }
+  }
+  &--4 {
+    &::after {
+      @include slide-base($animationDelay: 0.3s, $backgroundColor: #ff9d30);
+    }
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+$primary: #33459a;
+$secondary: #a5a3f9;
+
+.content {
+  position: relative;
+  top: 15vh;
+  left: 43vw;
+}
+.spacer {
+  margin: 24px 0;
+}
+@mixin text() {
+  margin: 0;
+  font-weight: 200;
+  font-size: 4em;
+  padding: 0px 8px;
+}
+
+// Left to Right
+.LTR {
+  display: inline-block;
+  position: relative;
+  &__text {
+    @include text();
+    opacity: 0;
+    animation: textHidden 0.1s 0.7s forwards;
+  }
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 10;
+  }
+  &:before {
+    background-color: $secondary;
+    animation: LTR 1.3s 0s ease;
+  }
+  &:after {
+    background-color: $primary;
+    animation: LTR 1s 0s ease;
+  }
+}
+@keyframes LTR {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  65% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+// Right to Left
+.RTL {
+  display: inline-block;
+  position: relative;
+  &__text {
+    @include text();
+    opacity: 0;
+    animation: textHidden 0.1s 0.7s forwards;
+  }
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 10;
+  }
+  &:before {
+    background-color: $secondary;
+    animation: RTL 1.3s 0s ease;
+  }
+  &:after {
+    background-color: $primary;
+    animation: RTL 1s 0s ease;
+  }
+}
+@keyframes RTL {
+  0% {
+    width: 0;
+    right: 0;
+  }
+  65% {
+    width: 100%;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    right: 100%;
+  }
+}
+// Top to Bottom
+.TTB {
+  display: inline-block;
+  position: relative;
+  &__text {
+    @include text();
+    opacity: 0;
+    animation: textHidden 0.1s 0.7s forwards;
+  }
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+  &:before {
+    background-color: $secondary;
+    animation: TTB 1.3s 0s ease both;
+  }
+  &:after {
+    background-color: $primary;
+    animation: TTB 1s 0s ease both;
+  }
+}
+@keyframes TTB {
+  0% {
+    height: 0;
+    top: 0;
+  }
+  65% {
+    height: 100%;
+    top: 0;
+  }
+  100% {
+    height: 0;
+    top: 100%;
+  }
+}
+
+// Bottom to Top
+.BTT {
+  display: inline-block;
+  position: relative;
+  &__text {
+    @include text();
+    opacity: 0;
+    animation: textHidden 0.1s 0.7s forwards;
+  }
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+  &:before {
+    background-color: $secondary;
+    animation: BTT 1.3s 0s ease both;
+  }
+  &:after {
+    background-color: $primary;
+    animation: BTT 1s 0s ease both;
+  }
+}
+@keyframes BTT {
+  0% {
+    height: 0;
+    bottom: 0;
+  }
+  65% {
+    height: 100%;
+    bottom: 0;
+  }
+  100% {
+    height: 0;
+    bottom: 100%;
+  }
+}
+
+@keyframes textHidden {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
