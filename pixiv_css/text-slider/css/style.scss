@@ -18,6 +18,8 @@ $secondary: #a5a3f9;
   font-weight: 200;
   font-size: 4em;
   padding: 0px 8px;
+  opacity: 0;
+  animation: textHidden 0.1s 0.7s forwards;
 }
 
 // Left to Right
@@ -26,8 +28,6 @@ $secondary: #a5a3f9;
   position: relative;
   &__text {
     @include text();
-    opacity: 0;
-    animation: textHidden 0.1s 0.7s forwards;
   }
   &:before,
   &:after {
@@ -67,8 +67,6 @@ $secondary: #a5a3f9;
   position: relative;
   &__text {
     @include text();
-    opacity: 0;
-    animation: textHidden 0.1s 0.7s forwards;
   }
   &:before,
   &:after {
@@ -108,8 +106,6 @@ $secondary: #a5a3f9;
   position: relative;
   &__text {
     @include text();
-    opacity: 0;
-    animation: textHidden 0.1s 0.7s forwards;
   }
   &:before,
   &:after {
@@ -150,8 +146,6 @@ $secondary: #a5a3f9;
   position: relative;
   &__text {
     @include text();
-    opacity: 0;
-    animation: textHidden 0.1s 0.7s forwards;
   }
   &:before,
   &:after {
