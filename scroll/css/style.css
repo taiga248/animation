@@ -11,7 +11,7 @@ body {
 }
 .boxes {
   width: 100vw;
-  margin: 48px 0;
+  margin: 20vh 0;
 }
 .box {
   display: flex;
