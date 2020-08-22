@@ -4,16 +4,18 @@ body {
 }
 
 .content {
-  height: 33vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 5vh 0;
 }
 
 .box-1__x {
@@ -227,7 +229,7 @@ body {
   background-color: transparent;
 }
 
-.box-3 {
+.box-3__x {
   width: 200px;
   height: 200px;
   margin: 8px;
@@ -237,7 +239,42 @@ body {
   overflow: hidden;
 }
 
-.box-3::before {
+.box-3__x::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 100%;
+  background: #0d84ff;
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+  -webkit-transform: skewX(10deg) scaleX(0);
+          transform: skewX(10deg) scaleX(0);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.box-3__x:hover::before {
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  -webkit-transform: skewX(10deg) scaleX(1);
+          transform: skewX(10deg) scaleX(1);
+}
+
+.box-3__y {
+  width: 200px;
+  height: 200px;
+  margin: 8px;
+  display: inline-block;
+  position: relative;
+  border: solid 1px #0d84ff;
+  overflow: hidden;
+}
+
+.box-3__y::before {
   content: "";
   position: absolute;
   top: 0;
@@ -255,7 +292,7 @@ body {
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
-.box-3:hover::before {
+.box-3__y:hover::before {
   -webkit-transform-origin: left top;
           transform-origin: left top;
   -webkit-transform: skewY(-15deg) scaleY(1);
