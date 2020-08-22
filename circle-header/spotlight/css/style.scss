@@ -8,10 +8,11 @@ section {
   width: 100%;
   height: 100vh;
   // カーソルに合わせてスポットする時これ
-  // clip-path: circle(300px at var(--x) var(--y));
-  background: url("img/shoes.jpg");
+  clip-path: circle(300px at var(--x) var(--y));
+  background: url("../img/shoes.jpg");
   background-size: cover;
-  animation: light 7s infinite ease-in-out;
+  // 自動スポットライト
+  // animation: light 7s infinite ease-in-out;
 }
 
 @keyframes light {

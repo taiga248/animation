@@ -15,15 +15,15 @@ section {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 12px 24px;
+  margin: 16px 24px;
 }
 
-.card-area {
+.card {
   width: 300px;
   margin: 24px;
 }
 
-.card-area__content {
+.card__content {
   border-radius: 8px;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -33,16 +33,16 @@ section {
   transition: background-position 0.4s;
 }
 
-.card-area__content:hover {
+.card__content:hover {
   background-position: 0 0;
 }
 
-.card-area__content__img {
+.card__content__img {
   width: 100%;
 }
 
-.card-area__content__text {
-  padding: 10px;
+.card__content__text {
+  padding: 8px;
   margin: 8px 16px;
 }
 /*# sourceMappingURL=style.css.map */

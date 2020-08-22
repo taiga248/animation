@@ -1,0 +1,29 @@
+.item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: all-scroll;
+  &--red {
+    left: 0;
+    background-color: red;
+  }
+  &--blue {
+    left: 110px;
+    background-color: blue;
+  }
+  &--yellow {
+    left: 220px;
+    background-color: yellow;
+  }
+  &--green {
+    left: 330px;
+    background-color: green;
+  }
+}

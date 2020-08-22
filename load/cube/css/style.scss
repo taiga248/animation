@@ -1,39 +1,35 @@
-*{
+body {
   margin: 0;
   padding: 0;
 }
 
-.loader{
-  width: 30px;
-  height: 30px;
-}
-
-.loader__cube{
-  width: 15px;
-  height: 15px;
-  background-color: #666;
-  border-radius: 2px;
-  animation: loading 2s infinite ease-in-out;
-}
-
-.delay {
-  animation-delay: -1s;
+.loader {
+  &__cube {
+    width: 15px;
+    height: 15px;
+    background-color: #666;
+    border-radius: 2px;
+    animation: loading 2s infinite ease-in-out both;
+    &--delay {
+      animation-delay: -1s;
+    }
+  }
 }
 
 @keyframes loading {
-  25%{ 
+  25% {
     transform: translateX(42px) rotate(-90deg) scale(0.5);
-  } 
-  50%{ 
+  }
+  50% {
     transform: translateX(42px) translateY(22px) rotate(-179deg);
-  } 
-  50.1%{ 
+  }
+  50% {
     transform: translateX(42px) translateY(22px) rotate(-180deg);
-  } 
-  75%{ 
+  }
+  75% {
     transform: translateX(0px) translateY(22px) rotate(-270deg) scale(0.5);
-  } 
-  100%{ 
+  }
+  100% {
     transform: rotate(-360deg);
   }
 }

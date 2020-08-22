@@ -1,15 +1,13 @@
-* {
+body {
   margin: 0;
   padding: 0;
 }
-
 .title {
   color: #fff;
   text-align: center;
   margin: 25vh 0 0 0;
   z-index: -1;
 }
-
 .svg-container {
   position: absolute;
   top: 0;
@@ -17,9 +15,9 @@
   left: 0;
   z-index: -1;
 }
-
 .svg-path {
-  -webkit-transition: .05s;
-  transition: .05s;
+  transition: 0.05s;
 }
-/*# sourceMappingURL=style.css.map */
+.spacer {
+  height: 100vh;
+}

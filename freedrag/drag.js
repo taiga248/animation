@@ -1,81 +1,46 @@
-(function(){
+(() => {
+  const items = document.getElementsByClassName("item");
+  let event;
+  let x;
+  let y;
 
-    //要素の取得
-    var elements = document.getElementsByClassName("drag-and-drop");
+  for (let i = 0; i < items.length; i++) {
+    items[i].addEventListener("mousedown", mouseDown, false);
+    items[i].addEventListener("touchstart", mouseDown, false);
+  }
 
-    //要素内のクリックされた位置を取得するグローバル（のような）変数
-    var x;
-    var y;
+  function mouseDown(e) {
+    this.classList.add("drag");
+    e.type === "mousedown" ? (event = e) : (event = e.changedTouches[0]);
+    x = event.pageX - this.offsetLeft;
+    y = event.pageY - this.offsetTop;
 
-    //マウスが要素内で押されたとき、又はタッチされたとき発火
-    for(var i = 0; i < elements.length; i++) {
-        elements[i].addEventListener("mousedown", mdown, false);
-        elements[i].addEventListener("touchstart", mdown, false);
-    }
+    document.body.addEventListener("mousemove", nouseMove, false);
+    document.body.addEventListener("touchmove", nouseMove, false);
+  }
 
-    //マウスが押された際の関数
-    function mdown(e) {
+  function nouseMove(e) {
+    const drag = document.getElementsByClassName("drag")[0];
+    e.type === "mousemove" ? (event = e) : (event = e.changedTouches[0]);
+    e.preventDefault();
 
-        //クラス名に .drag を追加
-        this.classList.add("drag");
+    drag.style.top = event.pageY - y + "px";
+    drag.style.left = event.pageX - x + "px";
 
-        //タッチデイベントとマウスのイベントの差異を吸収
-        if(e.type === "mousedown") {
-            var event = e;
-        } else {
-            var event = e.changedTouches[0];
-        }
+    drag.addEventListener("mouseup", mouseUp, false);
+    document.body.addEventListener("mouseleave", mouseUp, false);
+    drag.addEventListener("touchend", mouseUp, false);
+    document.body.addEventListener("touchleave", mouseUp, false);
+  }
 
-        //要素内の相対座標を取得
-        x = event.pageX - this.offsetLeft;
-        y = event.pageY - this.offsetTop;
+  function mouseUp(e) {
+    const drag = document.getElementsByClassName("drag")[0];
 
-        //ムーブイベントにコールバック
-        document.body.addEventListener("mousemove", mmove, false);
-        document.body.addEventListener("touchmove", mmove, false);
-    }
+    document.body.removeEventListener("mousemove", nouseMove, false);
+    drag.removeEventListener("mouseup", mouseUp, false);
+    document.body.removeEventListener("touchmove", nouseMove, false);
+    drag.removeEventListener("touchend", mouseUp, false);
 
-    //マウスカーソルが動いたときに発火
-    function mmove(e) {
-
-        //ドラッグしている要素を取得
-        var drag = document.getElementsByClassName("drag")[0];
-
-        //同様にマウスとタッチの差異を吸収
-        if(e.type === "mousemove") {
-            var event = e;
-        } else {
-            var event = e.changedTouches[0];
-        }
-
-        //フリックしたときに画面を動かさないようにデフォルト動作を抑制
-        e.preventDefault();
-
-        //マウスが動いた場所に要素を動かす
-        drag.style.top = event.pageY - y + "px";
-        drag.style.left = event.pageX - x + "px";
-
-        //マウスボタンが離されたとき、またはカーソルが外れたとき発火
-        drag.addEventListener("mouseup", mup, false);
-        document.body.addEventListener("mouseleave", mup, false);
-        drag.addEventListener("touchend", mup, false);
-        document.body.addEventListener("touchleave", mup, false);
-
-    }
-
-    //マウスボタンが上がったら発火
-    function mup(e) {
-        var drag = document.getElementsByClassName("drag")[0];
-
-        //ムーブベントハンドラの消去
-        document.body.removeEventListener("mousemove", mmove, false);
-        drag.removeEventListener("mouseup", mup, false);
-        document.body.removeEventListener("touchmove", mmove, false);
-        drag.removeEventListener("touchend", mup, false);
-
-        //クラス名 .drag も消す
-        drag.classList.remove("drag");
-    }
-
-})()
-
+    drag.classList.remove("drag");
+  }
+})();

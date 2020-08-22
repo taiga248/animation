@@ -1,6 +1,5 @@
-const loader = document.getElementById("loader")
+const loader = document.getElementById("loader");
 
-/* ロードが終わったらloaderを消す */
 window.addEventListener("load", () => {
-    loader.style.display = "none"
-})
+  loader.style.display = "none";
+});

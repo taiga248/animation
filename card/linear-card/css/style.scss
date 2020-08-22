@@ -7,9 +7,9 @@ section {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 12px 24px;
+  margin: 16px 24px;
 }
-.card-area {
+.card {
   width: 300px;
   margin: 24px;
   &__content {
@@ -31,7 +31,7 @@ section {
       width: 100%;
     }
     &__text {
-      padding: 10px;
+      padding: 8px;
       margin: 8px 16px;
     }
   }

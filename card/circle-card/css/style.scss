@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  // outline: solid red 1px;
+}
+.card {
+  color: #fff;
+  background: rgb(7, 218, 165);
+  border-radius: 8px;
+  padding: 8px 24px;
+  width: 240px;
+  clip-path: circle(10% at 90% 20%);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  &__head {
+    line-height: 36px;
+    &__title {
+      font-size: 2em;
+      margin: 0;
+    }
+    &__info {
+      transition: color 0.6s ease;
+    }
+  }
+  &:hover .card__head__info {
+    color: #00b6ff;
+  }
+  &:hover {
+    clip-path: circle(75%);
+    background: #00b6ff;
+    box-shadow: #ddd 7px 7px 5px;
+  }
+}

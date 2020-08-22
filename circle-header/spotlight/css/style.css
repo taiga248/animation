@@ -7,10 +7,10 @@ body {
 section {
   width: 100%;
   height: 100vh;
-  background: url("img/shoes.jpg");
+  -webkit-clip-path: circle(300px at var(--x) var(--y));
+          clip-path: circle(300px at var(--x) var(--y));
+  background: url("../img/shoes.jpg");
   background-size: cover;
-  -webkit-animation: light 7s infinite ease-in-out;
-          animation: light 7s infinite ease-in-out;
 }
 
 @-webkit-keyframes light {

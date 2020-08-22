@@ -1,30 +1,14 @@
-#target{
+#target {
+  width: 100px;
+  height: 100px;
+  background: #01579b;
   cursor: pointer;
-  width:100px;
-  height:100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #01579B;
-  color:#FFF;
-  border:solid 1px #000;
 }
 
-#dropArea1{
-  width:100px;
-  height:100px;
-  margin:10px;
-  border:dotted 1px #000;
-}
-#dropArea2{
-  width:100px;
-  height:100px;
-  margin:10px;
-  border:dotted 1px #000;
-}
-#dropArea3{
-  width:100px;
-  height:100px;
-  margin:10px;
-  border:dotted 1px #000;
+#area_1,
+#area_2 {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border: dotted 1px #000;
 }

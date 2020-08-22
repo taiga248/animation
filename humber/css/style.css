@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  display: block;
+  background: none;
+  border: none;
+  padding: 0;
+  width: 42px;
+  color: #333;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.menu__line {
+  display: block;
+  height: 2px;
+  background-color: #333;
+  margin: 10px 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+
+.open {
+  display: block;
+}
+
+.close {
+  display: none;
+}
+
+.menu.active .menu__line {
+  width: 49px;
+}
+
+.menu.active .line1 {
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.menu.active .line2 {
+  opacity: 0;
+}
+
+.menu.active .line3 {
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+.menu.active .open {
+  display: none;
+}
+
+.menu.active .close {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */
