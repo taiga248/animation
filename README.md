@@ -7,7 +7,7 @@
 [TopPage](https://taiga248.github.io/animation)
 
 - [card](https://taiga248.github.io/animation/card)
-- [circle-header](https://taiga248.github.io/animation/cricle-header)
+- [circle-header](https://taiga248.github.io/animation/circle-header)
 - [drag](https://taiga248.github.io/animation/drag)
 - [freedrag](https://taiga248.github.io/animation/freedrag)
 - [humber](https://taiga248.github.io/animation/humber)
