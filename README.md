@@ -15,4 +15,4 @@
 - [slide-show](https://taiga248.github.io/animation/slide-show)
 - [sticky](https://taiga248.github.io/animation/sticky)
 
-その時の気分でやっているので、まとまってなさそう。
+わかりにくいリンク名ですみません
