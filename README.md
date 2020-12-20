@@ -1,7 +1,5 @@
 # アニメーションの溜まり場
 
-（分かりやすいリンク名つけるの難しくない?）
-
 ## リンク
 
 [TopPage](https://taiga248.github.io/animation)
