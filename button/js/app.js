@@ -1,5 +1,5 @@
-const btn_1 = document.querySelector(".js-btn--1");
-const btn_2 = document.querySelector(".js-btn--2");
+const btn_1 = document.getElementById("btn_1");
+const btn_2 = document.getElementById("btn_2");
 
 btn_1.onmousemove = function (e) {
   const x = e.pageX - btn_1.offsetLeft;
