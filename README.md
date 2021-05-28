@@ -10,7 +10,7 @@
 - [freedrag](https://taiga248.github.io/animation/freedrag)
 - [humber](https://taiga248.github.io/animation/humber)
 - [load](https://taiga248.github.io/animation/load)
-- [pixiv_css](https://taiga248.github.io/animation//pixiv_css) ⭐️
+- [pixiv_css](https://taiga248.github.io/animation//pixiv_css)
 - [scroll](https://taiga248.github.io/animation/scroll)
 - [slide-show](https://taiga248.github.io/animation/slide-show)
 - [sticky](https://taiga248.github.io/animation/sticky)

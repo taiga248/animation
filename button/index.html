@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>BTN</title>
+  </head>
+  <body>
+    <section class="section">
+      <a href="#" class="btn js-btn--1">
+        <span class="btn__link" href="#">button</span>
+      </a>
+      <a href="#" class="btn js-btn--2">
+        <span class="btn__link" href="#">button</span>
+      </a>
+    </section>
+    <script>
+      const btn_1 = document.querySelector(".js-btn--1");
+      const btn_2 = document.querySelector(".js-btn--2");
+
+      btn_1.onmousemove = function (e) {
+        const x = e.pageX - btn_1.offsetLeft;
+        const y = e.pageY - btn_1.offsetTop;
+        btn_1.style.setProperty("--x", x + "px");
+        btn_1.style.setProperty("--y", y + "px");
+      };
+      btn_2.onmousemove = function (e) {
+        const x = e.pageX - btn_2.offsetLeft;
+        const y = e.pageY - btn_2.offsetTop;
+        btn_2.style.setProperty("--x", x + "px");
+        btn_2.style.setProperty("--y", y + "px");
+      };
+    </script>
+  </body>
+</html>

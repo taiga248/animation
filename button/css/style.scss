@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+$primary: rgb(10, 132, 255);
+$btn_w: 150px;
+$btn_h: 50px;
+$btn_bg_color: #333;
+$btn_text_color: #fff;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.btn {
+  @include flex-center;
+  position: relative;
+  width: $btn_w;
+  height: $btn_h;
+  background: $btn_bg_color;
+  color: $btn_text_color;
+  text-decoration: none;
+  overflow: hidden;
+  &:before {
+    content: "";
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: $primary;
+    transition: width 0.5s, height 0.5s;
+  }
+  &:hover {
+    &::before {
+      width: $btn_w * 2;
+      height: $btn_w * 2;
+    }
+  }
+  &__link {
+    z-index: 10;
+  }
+}
