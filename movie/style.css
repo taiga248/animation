@@ -10,7 +10,7 @@ body {
 
 .title {
   position: absolute;
-  top: 50vh;
+  top: 45vh;
   left: 50vw;
   transform: translate(-50%, -50%);
   color: #fff;
