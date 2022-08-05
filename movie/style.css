@@ -36,3 +36,13 @@ body {
   min-width: 100%;
   z-index: -1;
 }
+
+.movie__gif {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -1;
+}
