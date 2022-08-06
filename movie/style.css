@@ -52,7 +52,7 @@ body {
   top: 100vh;
   height: 60vh;
   color: #fff;
-  background: #000;
+  background: rgba(0, 0, 0, 0.85);
   display: flex;
   justify-content: center;
   align-items: center;
