@@ -46,3 +46,15 @@ body {
   min-width: 100%;
   z-index: -1;
 }
+
+#container {
+  position: relative;
+  top: 100vh;
+  height: 60vh;
+  color: #fff;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
